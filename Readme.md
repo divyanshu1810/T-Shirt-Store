@@ -29,6 +29,18 @@ crafted with <span style="color: #8b0000;">&hearts;</span> by <a href="https://w
 <!--   <img alt="Screenshot" src="https://user-images.githubusercontent.com/91051053/216115977-02b02a8d-f8e6-493e-ba88-14e42dfa6bfc.png" /> -->
 </div>
 
+# About 🎭
+Many large corporations already use 3D graphics to showcase their products. Learn how to build your own ThreeJS 3D product website and infuse it with the power of artificial intelligence!
+
+
+## You'll also learn how to 🥹:  
+* Load, create and customize stunning 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
+* Make your code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
+* Add custom color and file support.
+* Generate and use images through OPEN AI
+* Download the resulting t-shirt model image
+* Ensure responsiveness across all devices and improve your site's performance
+
 ## Installation 🔧
 
 Install dependencies
