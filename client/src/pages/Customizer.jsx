@@ -2,6 +2,8 @@ import React, { useState, useEffect, createRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 import config from '../config/config';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import state from '../store';
 import { download } from '../assets';
 import { downloadCanvasToImage, reader } from '../config/helpers';
@@ -77,8 +79,9 @@ const Customizer = () => {
       const data = await response.json();
 
       handleDecals(type, `data:image/png;base64,${data.photo}`)
+      toast.success("Image generated successfully");
     } catch (error) {
-      alert(error)
+      toast.error("Error generating image or check if the backend is up and running");
     } finally {
       setGeneratingImg(false);
       setActiveEditorTab("");
@@ -161,6 +164,8 @@ const Customizer = () => {
               handleClick={() => state.intro = true}
               customStyles="w-fit px-4 py-2.5 font-bold text-sm"
             />
+            {/* Fit here  */}
+            <ToastContainer theme='dark' />
           </motion.div>
 
           <motion.div
